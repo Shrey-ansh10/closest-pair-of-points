@@ -5,12 +5,12 @@
 
 // ALG1: Brute Force O(n²) algorithm
 ClosestPair::Result ClosestPair::bruteForce(const std::vector<Point>& points) {
-    int n = points.size();
-    if (n < 2) {
+    int n = points.size(); // determining the number of points, for safety
+    if (n < 2) { //only one point
         return Result(); // Not enough points
     }
     
-    Result result;
+    Result result; //result object
     result.distance = std::numeric_limits<double>::max(); // setting min distance to max(infinity)
     
     // Compare all pairs of points
@@ -29,13 +29,13 @@ ClosestPair::Result ClosestPair::bruteForce(const std::vector<Point>& points) {
 }
 
 // ALG2: Divide and Conquer O(n log n) algorithm
-ClosestPair::Result ClosestPair::divideAndConquer(const std::vector<Point>& points) {
+ClosestPair::Result ClosestPair::divideAndConquer(const std::vector<Point>& points) { //defining the algorithm here.
     int n = points.size();
     if (n < 2) {
         return Result(); // Not enough points
     }
     
-    // Construct Px and Py - exactly as in pseudocode
+    // Construct Px and Py 
     std::vector<Point> Px = points;
     std::vector<Point> Py = points;
     
