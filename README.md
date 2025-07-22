@@ -1,8 +1,4 @@
-# Closest Pair of Points Analysis
-
-This project implements and compares two algorithms for solving the Closest Pair of Points problem:
-1. Brute Force approach (ALG1) - O(n²) time complexity
-2. Divide and Conquer approach (ALG2) - O(n log n) time complexity
+# FastPair : Cluster Closest Point-Pair in a 2D Space
 
 ## Problem Statement
 Given n points P1, P2, …, Pn in a plane, the objective is to find the pair of points that are closest to each other. The algorithm returns the indices i and j of the two closest points, Pi and Pj.
@@ -22,6 +18,12 @@ Given n points P1, P2, …, Pn in a plane, the objective is to find the pair of 
 ├── run_tests.sh            # Script to build and run tests
 └── visualize_results.py    # Python script for visualizing results
 ```
+
+
+This project implements and compares two algorithms for solving the Closest Pair of Points problem:
+1. Brute Force approach (ALG1) - O(n²) time complexity
+2. Divide and Conquer approach (ALG2) - O(n log n) time complexity
+
 
 ## Implementation Details
 
