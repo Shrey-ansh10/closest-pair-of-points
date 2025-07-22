@@ -108,3 +108,36 @@ The expected results should show:
 - ALG2 (Divide and Conquer) has O(n log n) time complexity, so runtime increases more slowly
 
 For large inputs, the divide-and-conquer approach should significantly outperform the brute force method.
+
+
+## Results
+
+### Performance Comparison
+![Empirical Running Time Comparison](results/1_empirical_comparison.png)
+
+The graph above shows the empirical running time comparison between:
+- ALG1 (Brute Force) with O(n²) complexity
+- ALG2 (Divide & Conquer) with O(n log n) complexity
+
+
+### Algorithm Performance vs Theoretical Predictions
+
+#### Brute Force (ALG1)
+![ALG1 Empirical vs Predicted](results/2_alg1_empirical_vs_predicted.png)
+
+The graph shows how the actual performance of the brute force algorithm aligns with its theoretical O(n²) complexity.
+
+#### Divide and Conquer (ALG2)
+![ALG2 Empirical vs Predicted](results/3_alg2_empirical_vs_predicted.png)
+
+The graph demonstrates how the divide and conquer algorithm follows its theoretical O(n log n) complexity.
+
+
+### Key Findings
+
+1. **Performance Gap**: The divide and conquer algorithm (ALG2) significantly outperforms the brute force approach (ALG1) for large datasets.
+2. **Scalability**: As the input size grows:
+   - ALG1's runtime increases quadratically
+   - ALG2's runtime grows much more slowly (n log n)
+3. **Practical Implications**: For datasets larger than 50,000 points, ALG2 is the clear choice due to its superior performance.
+
